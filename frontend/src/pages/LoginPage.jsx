@@ -10,7 +10,7 @@ export default function LoginPage() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const from = location.state?.from?.pathname || '/';
+  const from = '/dashboard';
 
   if (isAuthenticated) {
     return <Navigate to={from} replace />;
